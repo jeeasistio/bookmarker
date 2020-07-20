@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Lato,Sans-Serif;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  "hdr"
+  "mn"
+  "ftr";
+}
+
+header {
+  grid-area: hdr;
+  height: 20vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  min-height: 75vh;
+  grid-area: mn;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+}
+
+fieldset {
+  width: 50%;
+  margin: 3% auto;
+  padding: 3%;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+fieldset h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin: 6% 4%;
+}
+
+label {
+  display: block;
+}
+
+[type=text] {
+  width: 100%;
+  padding: 2% 4%;
+  margin: 1%;
+  border: 1px solid black;
+  transform: scalex(1);
+}
+
+[type=submit] {
+  padding: 2%;
+  display: block;
+  margin: auto;
+  background: #000;
+  color: #fff;
+  border: none;
+  transition: filter 0.2s ease, transform 0.1s linear;
+}
+
+[type=submit]:hover {
+  filter: invert(1);
+}
+
+[type=submit]:active {
+  transform: scale(0.9);
+}
+
+#bookmarked {
+  width: 100%;
+}
+
+.bookmarked-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  width: 60%;
+  margin: 5% auto;
+  padding: 2%;
+}
+
+.bookmarked-name {
+  flex: 1;
+}
+
+.bookmarked-url {
+  text-decoration: none;
+  color: #fff;
+  background: #000;
+  padding: 5px 10px;
+  margin: auto 2px;
+  border: none;
+  transition: filter 0.2s ease, transform 0.1s linear;
+}
+
+.bookmarked-url:hover {
+  filter: invert(1);
+}
+
+.bookmarked-url:active {
+  transform: scale(0.9);
+}
+
+.delete {
+  padding: 5px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  border: none;
+  transition: background 0.2s ease, transform 0.1s linear, color 0.2s ease;
+}
+
+.delete:hover {
+  background: white;
+  color: red;
+}
+
+.delete:active {
+  transform: scale(0.9);
+}
+
+footer {
+  grid-area: ftr;
+  height: 15vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+footer small {
+  margin-left: 3%;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/98bc12c08c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+  <title>Bookmarker</title>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-bookmark"></i> Bookmarker</h1>
+  </header>
+
+  <main>
+    <form>
+      <fieldset>
+        <h2>Bookmark your favorite sites</h2>
+        <div class="form-group">
+          <label for="site-name"><i class="fas fa-tag"></i> Site Name</label>
+          <input type="text" id="site-name" placeholder="website name" required />
+        </div>
+        <div class="form-group">
+          <label for="site-url"><i class="fas fa-link"></i> Site Url</label>
+          <input type="text" id="site-url" placeholder="website url" required />
+        </div>
+        <input type="submit" value="Add to Bookmarks +">
+      </fieldset>
+    </form>
+
+    <section id="bookmarked"></section>
+  </main>
+
+  <footer>
+    <small>&copy; jeeasistio</small>
+  </footer>
+
+  <script src="./script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
